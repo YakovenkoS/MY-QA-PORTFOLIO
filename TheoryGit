@@ -1,0 +1,156 @@
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git
+$ git config --global --list
+fatal: unable to read config file 'C:/Users/lenovo/.gitconfig': No such file or directory
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git
+$ git config --global user.name MY-QA-PORTFOLIO
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git
+$ git config --global user.email s.yakovenko.work@gmail.com
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git
+$ git config --global --list
+user.name=MY-QA-PORTFOLIO
+user.email=s.yakovenko.work@gmail.com
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git
+$ git clone https://github.com/YakovenkoS/MY-QA-PORTFOLIO.git
+Cloning into 'MY-QA-PORTFOLIO'...
+remote: Enumerating objects: 22, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 22 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (22/22), 6.09 KiB | 1.22 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git
+$ cd C:/Git/MY-QA-PORTFOLIO
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Theory Git
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git add Theory GIT
+fatal: pathspec 'Theory' did not match any files
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git add Theory Git
+fatal: pathspec 'Theory' did not match any files
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ ^C
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ ^C
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git addTheory Git
+git: 'addTheory' is not a git command. See 'git --help'.
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git add Theory Git
+fatal: pathspec 'Theory' did not match any files
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git config --global --list
+user.name=MY-QA-PORTFOLIO
+user.email=s.yakovenko.work@gmail.com
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git add Theory
+fatal: pathspec 'Theory' did not match any files
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Theory Git
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git add Theory Git
+fatal: pathspec 'Theory' did not match any files
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git add Theory Git
+fatal: pathspec 'Theory' did not match any files
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git add .
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Theory Git
+
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Theory Git
+
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git commit m "Update Theory Git"
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'Update Theory Git' did not match any file(s) known to git
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git commit -m "Update Theory Git"
+[main e0b8c30] Update Theory Git
+ 1 file changed, 8 insertions(+)
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ ^C
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git add "Theory Git"
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 595 bytes | 297.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/YakovenkoS/MY-QA-PORTFOLIO.git
+   40e2602..e0b8c30  main -> main
+branch 'main' set up to track 'origin/main'.
+
+lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
+$
