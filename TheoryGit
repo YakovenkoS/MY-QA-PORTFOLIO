@@ -155,3 +155,4 @@ branch 'main' set up to track 'origin/main'.
 lenovo@DESKTOP-HP8B8N1 MINGW64 /c/Git/MY-QA-PORTFOLIO (main)
 $
  Треба вводити Token
+ git push https://<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>@github.com/<YakovenkoS>/<MY-QA-PORTFOLIO>.git
